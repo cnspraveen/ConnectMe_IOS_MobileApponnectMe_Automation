@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <parameter name="pdfngreport-properties" value="pdfng.properties"/>
+  <listeners>
+    <listener class-name="com.deloitte.ConnectMeLib.Listener"/>
+    <listener class-name="com.uttesh.pdfngreport.PDFReportListener"/>
+  </listeners>
+  <test name="Test">
+    <classes>
+      <class name="com.deloitte.ConnectMeLib.Baselib"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.deloitte.ConnectMeLib.Baselib">
+        <methods>
+          <include name="AppClose"/>
+          <include name="appConnectMeLaunch"/>
+          <include name="appLogin"/>
+        </methods>
+      </class> <!-- com.deloitte.ConnectMeLib.Baselib -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

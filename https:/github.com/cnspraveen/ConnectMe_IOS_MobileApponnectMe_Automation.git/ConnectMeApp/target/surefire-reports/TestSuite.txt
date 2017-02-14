@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 374.627 sec <<< FAILURE! - in TestSuite
+appLogin(com.deloitte.ConnectMeLib.Baselib)  Time elapsed: 268.802 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 111.33 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'USBLRILABMB', ip: '192.168.0.100', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_111'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities [{app=/Users/joker/Library/Developer/Xcode/DerivedData/ConnectMe-fydgaptdfhphpsbongegczahdiym/Build/Products/Debug-iphonesimulator/ConnectMe.app, networkConnectionEnabled=false, databaseEnabled=false, deviceName=iPhone 6s Plus, fullReset=true, platform=MAC, platformVersion=10.2, webStorageEnabled=false, locationContextEnabled=false, automationName=XCUITest, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=iOS}]
+Session ID: 44ca27f8-e109-401e-8685-83d1435c4130
+*** Element info: {Using=name, value=Request a Call Back}
+	at com.deloitte.ConnectMeLib.Baselib.appLogin(Baselib.java:181)
+
